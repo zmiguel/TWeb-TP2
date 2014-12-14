@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Hammersmith+One);
 
 body{
     background-color: #999;
@@ -22,13 +23,27 @@ body{
 
 
 header{ /* header */
+    font-family: Hammersmith One;
+    font-size: 3em;
     position: relative;
+    text-align: center;
     width: 100%;
     top: 0px;
     height: 64px;
     background-color: #BBB;
     z-index: 3;
+    align-self: center;
 }
+
+.htext{
+    text-decoration: none;
+    color: black;
+}
+
+.htext:hover{
+    text-decoration: underline;
+}
+
 
 #menu{ /* menu principal */
     width: 100%;
@@ -45,13 +60,12 @@ header{ /* header */
     height: 43px;
     font-size: 12px;
     padding-top: 5px;
-    border: solid 0px;
     display: inline-block;
     z-index: 5;
-     transition: .5s;
+    transition: .5s;
 }
 
 .menuitem:hover{
-    background-color: #000;
+    background-color: #fba;
     transition: .5s;
 }
