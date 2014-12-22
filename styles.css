@@ -1,10 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Hammersmith+One);
 
-body{
-    background-color: #999;
+#back-overlay{ /* Overlay Backgroung */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
     background-image: url(img/back.gif);
     background-repeat: repeat;
-    z-index: 0;
+    z-index: 1;
+    pointer-events: none;
 }
 
 #conteudo{ /* caixa geral */
@@ -35,7 +41,7 @@ header{ /* header */
     align-self: center;
 }
 
-.htext{
+.htext{ /* texto dentro de header */
     text-decoration: none;
     color: black;
 }
@@ -69,3 +75,42 @@ header{ /* header */
     background-color: #fba;
     transition: .5s;
 }
+
+/* Backgroung Animations */
+
+@keyframes background-slide {
+    0%  {background-image: url(img/2014-04-03%2022.49.52.jpg); background-repeat: no-repeat; background-size: cover;}
+    20% {background-image: url(img/2013-05-27%2013.04.01.jpg); background-repeat: no-repeat; background-size: cover;}
+    40% {background-image: url(img/2013-05-27%2012.58.10.jpg); background-repeat: no-repeat; background-size: cover;}
+    60% {background-image: url(img/2013-05-27%2013.02.38.jpg); background-repeat: no-repeat; background-size: cover;}
+    80% {background-image: url(img/2013-04-19%2016.20.04.jpg); background-repeat: no-repeat; background-size: cover;}
+    100%{background-image: url(img/2014-04-03%2022.49.52.jpg); background-repeat: no-repeat; background-size: cover;}
+}
+
+@-webkit-keyframes background-slide {
+    0%  {background-image: url(img/2014-04-03%2022.49.52.jpg); background-repeat: no-repeat; background-size: cover;}
+    20% {background-image: url(img/2013-05-27%2013.04.01.jpg); background-repeat: no-repeat; background-size: cover;}
+    40% {background-image: url(img/2013-05-27%2012.58.10.jpg); background-repeat: no-repeat; background-size: cover;}
+    60% {background-image: url(img/2013-05-27%2013.02.38.jpg); background-repeat: no-repeat; background-size: cover;}
+    80% {background-image: url(img/2013-04-19%2016.20.04.jpg); background-repeat: no-repeat; background-size: cover;}
+    100%{background-image: url(img/2014-04-03%2022.49.52.jpg); background-repeat: no-repeat; background-size: cover;}
+}
+
+#background{
+    z-index: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    
+    animation: background-slide 45s ease infinite;
+    -webkit-animation: background-slide 45s ease infinite;
+}
+
+#background:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+/* Fim background Animations */
