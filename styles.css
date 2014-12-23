@@ -16,8 +16,7 @@
 #conteudo{ /* caixa geral */
     position: absolute;
     width: 1000px;
-    min-height: 50%;
-    height: auto;
+    height: 98%;
     top: 0px;
     margin-left: -500px;
     background-color: #FFF;
@@ -25,8 +24,12 @@
     box-shadow: 0 0 5px 2px #555;
     left: 50%;
     padding: 10px;
+    overflow:auto;
 }
 
+::-webkit-scrollbar { /* esconder scrollbar no chrome, safari e opera // WebKit based browsers */
+    display: none; 
+}
 
 header{ /* header */
     font-family: Hammersmith One;
@@ -152,21 +155,21 @@ nav ul {
 /* Backgroung Animations */
 
 @keyframes background-slide {
-    0%  {background-image: url(img/2014-04-03%2022.49.52.jpg); background-repeat: no-repeat; background-size: cover;}
-    20% {background-image: url(img/2013-05-27%2013.04.01.jpg); background-repeat: no-repeat; background-size: cover;}
-    40% {background-image: url(img/2013-05-27%2012.58.10.jpg); background-repeat: no-repeat; background-size: cover;}
-    60% {background-image: url(img/2013-05-27%2013.02.38.jpg); background-repeat: no-repeat; background-size: cover;}
-    80% {background-image: url(img/2013-04-19%2016.20.04.jpg); background-repeat: no-repeat; background-size: cover;}
-    100%{background-image: url(img/2014-04-03%2022.49.52.jpg); background-repeat: no-repeat; background-size: cover;}
+    0%  {background-image: url(img/2014-04-03%2022.49.52.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center; }
+    20% {background-image: url(img/2013-05-27%2013.04.01.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center; }
+    40% {background-image: url(img/2013-05-27%2012.58.10.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center; }
+    60% {background-image: url(img/2013-05-27%2013.02.38.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center; }
+    80% {background-image: url(img/2013-04-19%2016.20.04.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center; }
+    100%{background-image: url(img/2014-04-03%2022.49.52.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center; }
 }
 
 @-webkit-keyframes background-slide {
-    0%  {background-image: url(img/2014-04-03%2022.49.52.jpg); background-repeat: no-repeat; background-size: cover;}
-    20% {background-image: url(img/2013-05-27%2013.04.01.jpg); background-repeat: no-repeat; background-size: cover;}
-    40% {background-image: url(img/2013-05-27%2012.58.10.jpg); background-repeat: no-repeat; background-size: cover;}
-    60% {background-image: url(img/2013-05-27%2013.02.38.jpg); background-repeat: no-repeat; background-size: cover;}
-    80% {background-image: url(img/2013-04-19%2016.20.04.jpg); background-repeat: no-repeat; background-size: cover;}
-    100%{background-image: url(img/2014-04-03%2022.49.52.jpg); background-repeat: no-repeat; background-size: cover;}
+    0%  {background-image: url(img/2014-04-03%2022.49.52.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center; }
+    20% {background-image: url(img/2013-05-27%2013.04.01.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center; }
+    40% {background-image: url(img/2013-05-27%2012.58.10.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center; }
+    60% {background-image: url(img/2013-05-27%2013.02.38.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center; }
+    80% {background-image: url(img/2013-04-19%2016.20.04.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center; }
+    100%{background-image: url(img/2014-04-03%2022.49.52.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center; }
 }
 
 #background{
