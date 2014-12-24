@@ -1,14 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Hammersmith+One);
 @import url(http://fonts.googleapis.com/css?family=Oxygen);
+@import url(http://fonts.googleapis.com/css?family=Signika);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro);
 
 body{
-    font-family: Oxygen;
+    font-family: Maven Pro;
 }
 
 #conteudo{ /* caixa geral */
     position: absolute;
     width: 1000px;
     top: 0px;
+    margin-top: 220px;
     margin-left: -510px;
     background-color: #FFF;
     z-index: 2;
@@ -23,26 +27,44 @@ body{
 }
 
 header{ /* header */
-    font-family: Hammersmith One;
-    font-size: 2.5em;
-    position: relative;
+    font-family: Titillium Web;
+    font-size: 56px;
+    position: absolute;
     text-align: center;
-    width: 100%;
+    width: 1000px;
+    margin-left: -500px;
     top: 0px;
-    height: 64px;
-    background-color: #005FFF;
+    left: 50%;
+    height: 220px;
     z-index: 3;
     align-self: center;
+    z-index: 2;
 }
 
-.htext{ /* texto dentro de header */
-    text-decoration: none;
+header img{
+    display: block;
     position: relative;
-    top: .22em;
-    color: #FFF;
+    height: 196px;
+    top: 12px;
+    left: 0px;
+    
 }
 
-.htext:hover{ /* acho que este é facil de preceber o que faz... */
+header a{
+    text-decoration: none;
+    position: absolute;
+    top: 110px;
+    margin-top: -44px;
+    color: #FFF;
+    right: 0px;
+    display: block;
+    text-shadow: 0 0 15px black;
+    font-variant: small-caps;
+    
+}
+
+
+header a:hover{ /* acho que este é facil de preceber o que faz... */
     text-decoration: underline;
 }
 
@@ -50,7 +72,7 @@ header{ /* header */
     position: relative;
     width: 100%;
     height: auto;
-    top: 5px;
+    top: 10px;
     background-color: #EEE;
     
 }
@@ -60,9 +82,10 @@ header{ /* header */
 nav {
 	width: 100%;
     height: 48px;
-    background-color: #49F;
+    background-color: #888 /*#49F*/;
     z-index: 4;
     transition: 0.2s;
+    font-family: Maven Pro;
 }
 
 nav ul ul {
@@ -99,10 +122,12 @@ nav ul li {
     width: 200px;
     z-index: 5;
     transition: 0.2s;
+    font-size: 20px;
+    font-variant: small-caps;
 }
 
 nav ul li:hover {
-	background: #27C;
+	background: #777 /*#27C*/;
     transition: 0.2s;
 }
 
@@ -116,7 +141,7 @@ nav ul li a {
     top: 1px;
     text-align: center;
 	display: block; 
-    padding: 14px;
+    padding: 12px;
 	color: #fff; 
     text-decoration: none;
     z-index: 5;
@@ -125,18 +150,17 @@ nav ul li a {
 			
 		
 nav ul ul {
-	background: #27C;
+	background: #777 /*#27C*/;
     padding: 0;
 	position: absolute; 
     top: 100%;
     transition: 0.2s;
-    white-space: nowrap;
 }
 		
 nav ul ul li {
 	float: none; 
-	border-top: 1px solid #38C;
-	border-bottom: 1px solid #16B; 
+	border-top: 1px solid #999 /*#38C*/;
+	border-bottom: 1px solid #666 /*#16B*/;
     position: relative;
     transition: 0.2s;
     white-space: nowrap;
@@ -149,7 +173,7 @@ nav ul ul li a {
 }
 
 nav ul ul li a:hover {
-	background: #25A;
+	background: #666 /*#25A*/;
     transition: 0.2s;
 }
 		

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    altura = $(window).height() - 20;
+    altura = $(window).height() - 240;
     $('#conteudo').css('height', altura);
     
     var page = window.location.hash;
@@ -51,7 +51,7 @@ $(document).ready(function(){
 });
 
 $(window).resize(function(){
-    altura = $(window).height() - 20;
+    altura = $(window).height() - 240;
     $('#conteudo').css('height', altura);
 });
 
