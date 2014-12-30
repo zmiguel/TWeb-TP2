@@ -64,7 +64,7 @@ header a{
 }
 
 
-header a:hover{ /* acho que este é facil de preceber o que faz... */
+header a:hover{
     text-decoration: underline;
 }
 
