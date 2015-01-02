@@ -1,8 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Hammersmith+One);
-@import url(http://fonts.googleapis.com/css?family=Oxygen);
-@import url(http://fonts.googleapis.com/css?family=Signika);
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web);
 @import url(http://fonts.googleapis.com/css?family=Maven+Pro);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
 body{
     font-family: Maven Pro;
@@ -237,3 +235,17 @@ nav ul ul ul {
 }
 
 /* Fim background Animations */
+
+/* #box Styles */
+
+#box{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#box h1{
+    text-align: center;
+}
+
+#box p a{
+    color: black;
+}
