@@ -10,6 +10,7 @@ body{
     position: absolute;
     width: 1000px;
     top: 0px;
+    min-height: 200px;;
     margin-top: 220px;
     margin-left: -510px;
     background-color: #FFF;
@@ -66,22 +67,13 @@ header a:hover{
     text-decoration: underline;
 }
 
-#box{
-    position: relative;
-    width: 100%;
-    height: auto;
-    top: 10px;
-    background-color: #EEE;
-    
-}
-
 /* Estilos dos Menus! */
 
 nav {
-	width: 100%;
+	width: 1000px;
     height: 48px;
     background-color: #888 /*#49F*/;
-    z-index: 4;
+    z-index: 10;
     transition: 0.2s;
     font-family: Maven Pro;
 }
@@ -239,7 +231,12 @@ nav ul ul ul {
 /* #box Styles */
 
 #box{
-    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 10px;
+    background-color: #EEE;
+    font-family: 'Source Sans Pro', sans-serif; 
 }
 
 #box h1{
