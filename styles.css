@@ -259,6 +259,10 @@ nav ul ul ul {
     color: black;
 }
 
+#box img{
+    max-width: 1000px;
+}
+
 #contactos{
     width: 500px;
     margin-left: 10px;
@@ -303,6 +307,10 @@ nav ul ul ul {
     visibility: hidden;
 }
 
+#box table{
+    margin-top: -25px;
+}
+
 /* SlidShow Turismo */
 
 #slidshow{
@@ -315,10 +323,12 @@ nav ul ul ul {
 
 #imgs{
     position: relative;
-    left: -500px;
     margin: 0;
-    width: 10000px;
+    width: 12000px;
     max-height: 500px;
+    
+    animation: turismo 60s linear infinite;
+    -webkit-animation: turismo 60s linear infinite;
 }
 
 #imgs a{
@@ -331,31 +341,47 @@ nav ul ul ul {
     display: inline;
 }
 
+#imgs:hover{
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
 @keyframes turismo {
-    0%  {background-image: url(img/2014-04-03%2022.49.52.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center; }
-    20% {background-image: url(img/2013-05-27%2013.04.01.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center; }
-    40% {background-image: url(img/2013-05-27%2012.58.10.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center; }
-    60% {background-image: url(img/2013-05-27%2013.02.38.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center; }
-    80% {background-image: url(img/2013-04-19%2016.20.04.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center; }
-    100%{background-image: url(img/2014-04-03%2022.49.52.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center; }
+    0%      {left:0px;}
+    6.25%   {left:-666px}
+    12.5%   {left:-1041px}
+    18.75%  {left:-1416px}
+    25%     {left:-1791px}
+    31.25%  {left:-2166px}
+    37.5%   {left:-2541px}
+    43.75%  {left:-3207px}
+    50%     {left:-3873px}
+    56.25%  {left:-4539px}
+    62.5%   {left:-5206px}
+    68.75%  {left:-5872px}
+    75%     {left:-6537px}
+    81.25%  {left:-7203px}
+    87.25%  {left:-7869px}
+    93.75%  {left:-8536px}
+    100%    {left:-9255px}
 }
 
 @-webkit-keyframes turismo {
-    0%      {}
-    6.25%   {}
-    12.5%   {}
-    18.75%  {}
-    25%     {}
-    31.25%  {}
-    37.5%   {}
-    43.75%  {}
-    50%     {}
-    56.25%  {}
-    62.5%   {}
-    68.75%  {}
-    75%     {}
-    81.25%  {}
-    87.25%  {}
-    93.75%  {}
-    100%    {}
+    0%      {left:0px;}
+    6.25%   {left:-666px}
+    12.5%   {left:-1041px}
+    18.75%  {left:-1416px}
+    25%     {left:-1791px}
+    31.25%  {left:-2166px}
+    37.5%   {left:-2541px}
+    43.75%  {left:-3207px}
+    50%     {left:-3873px}
+    56.25%  {left:-4539px}
+    62.5%   {left:-5206px}
+    68.75%  {left:-5872px}
+    75%     {left:-6537px}
+    81.25%  {left:-7203px}
+    87.25%  {left:-7869px}
+    93.75%  {left:-8536px}
+    100%    {left:-9255px}
 }
