@@ -1,27 +1,38 @@
 <h1>Contactos</h1>
-<fieldset>
+<fieldset id="contactos">
     <legend>Fale connosco</legend>
-<form action="" method="get">
-    Nome:<input type="text" name="nome" size="25" value="Nome"><br>
-    Apelido:<input type="text" name="apelido" size="25" value="Apelido"><br>
-    Sexo:<select name="selectoptions">
-	<option value="option1">Masculino</option>
-	<option value="option2">Feminino</option>
-</select><br>
-    Nr. Cartão de cidadão<input type="number" maxlength="8" name="cc" size="25" value="12345678">
-<br>
-    Idade:<input type="number" maxlength="3" name="textfield" size="25" value="TextField">
-    <br>
-    Morada:
-    <textarea name="" cols="25" rows="3">Morada</textarea><br>
-    Motivo de contacto: 
-    <select name="selectoptions">
-	<option value="option1">Obras</option>
-	<option value="option2">Limpezas</option>
-    <option value="option3">Educação</option>
-    <option value="option4">Saúde</option>
-    <option value="option5">Segurança</option>
-    </select>
-    <hr>
-</form>
+    <form action="" method="get">
+        <span>Nome:</span>
+        <input type="text" name="nome" size="25" value="Nome" required autofocus>
+        <br>
+        <span>Apelido:</span>
+        <input type="text" name="apelido" size="25" value="Apelido" required>
+        <br>
+        <span>Sexo:</span>
+        <select name="sexo" required>
+            <option value="m">Masculino</option>
+            <option value="f">Feminino</option>
+        </select>
+        <br>
+        <span>Cartão de Cidadão:</span>
+        <input type="number" maxlength="8" name="cc" size="25" value="12345678" required>
+        <br>
+        <span>idade:</span>
+        <input type="number" maxlength="3" name="idade" size="25" value="35" required>
+        <br>
+        <span id="morada">Morada:</span>
+        <textarea name="morada" cols="25" rows="3" required>Morada</textarea>
+        <br>
+        <span>Motivo do contacto:</span>
+        <select id="motivo" name="motivo" required>
+            <option value="obras">Obras</option>
+            <option value="saude">Saúde</option>
+            <option value="seguranca">Segurança</option>
+            <option value="limpezas">Limpezas</option>
+            <option value="educacao">Educação</option>
+            <option value="Outro">Outro</option>
+        </select>
+        <span class="ifoutro">Indique o motivo</span>
+        <input class="ifoutro" type="text" name="outromotivo" size="25" value="motivo">
+    </form>
 </fieldset>

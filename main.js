@@ -53,6 +53,12 @@ $(document).ready(function(){
 $(window).resize(function(){
     altura = $(window).height() - 240;
     $('#conteudo').css('height', altura);
+    
+     if($("#motivo").val() == "Outro"){
+        $('.ifoutro').css('visibility', 'visible');
+    }else{
+        $('.ifoutro').css('visibility', 'hidden');
+    }
 });
 
 //Paginas dinamicas Jquery + HTML 5
