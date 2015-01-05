@@ -1,12 +1,12 @@
 <h1>Contactos</h1>
 <fieldset id="contactos">
     <legend>Fale connosco</legend>
-    <form action="" method="get">
+    <form action="" method="post">
         <span>Nome:</span>
-        <input type="text" name="nome" size="25" value="Nome" required autofocus>
+        <input type="text" name="nome" size="25" placeholder="Nome" required autofocus>
         <br>
         <span>Apelido:</span>
-        <input type="text" name="apelido" size="25" value="Apelido" required>
+        <input type="text" name="apelido" size="25" placeholder="Apelido" required>
         <br>
         <span>Sexo:</span>
         <select name="sexo" required>
@@ -15,13 +15,13 @@
         </select>
         <br>
         <span>Cartão de Cidadão:</span>
-        <input type="number" maxlength="8" name="cc" size="25" value="12345678" required>
+        <input type="number" maxlength="8" name="cc" size="25" placeholder="12345678" required>
         <br>
-        <span>idade:</span>
-        <input type="number" maxlength="3" name="idade" size="25" value="35" required>
+        <span>Idade:</span>
+        <input type="number" maxlength="3" name="idade" size="25" placeholder="35" required>
         <br>
         <span id="morada">Morada:</span>
-        <textarea name="morada" cols="25" rows="3" required>Morada</textarea>
+        <textarea name="morada" cols="25" rows="3" required placeholder="Morada"></textarea>
         <br>
         <span>Motivo do contacto:</span>
         <select id="motivo" name="motivo" required>
@@ -34,5 +34,6 @@
         </select>
         <span class="ifoutro">Indique o motivo</span>
         <input class="ifoutro" type="text" name="outromotivo" size="25" value="motivo">
+        <input class="enviar" type="submit" name="enviar" value="Enviar">
     </form>
 </fieldset>

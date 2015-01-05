@@ -311,6 +311,11 @@ nav ul ul ul {
     margin-top: -25px;
 }
 
+#contactos .enviar{
+    height: 30px;
+    margin-left: 200px;
+}
+
 /* SlidShow Turismo */
 
 #slidshow{
