@@ -9,12 +9,6 @@ $(document).ready(function(){
         $('#box').load('html/sobre.html');
     } else if(page == "#pessoal"){
         $('#box').load('html/pessoal.html');
-    } else if(page == "#presidente"){
-        $('#box').load('html/presidente.html');
-    } else if(page == "#tesoureiro"){
-        $('#box').load('html/tesoureiro.html');
-    } else if(page == "#vogais"){
-        $('#box').load('html/vogais.html');
     } else if(page == "#servicos"){
         $('#box').load('html/servicos.html');
     } else if(page == "#info"){
@@ -71,12 +65,6 @@ $(window).on('hashchange',function(){
         $('#box').load('html/sobre.html');
     } else if(page == "#pessoal"){
         $('#box').load('html/pessoal.html');
-    } else if(page == "#presidente"){
-        $('#box').load('html/presidente.html');
-    } else if(page == "#tesoureiro"){
-        $('#box').load('html/tesoureiro.html');
-    } else if(page == "#vogais"){
-        $('#box').load('html/vogais.html');
     } else if(page == "#servicos"){
         $('#box').load('html/servicos.html');
     } else if(page == "#info"){
